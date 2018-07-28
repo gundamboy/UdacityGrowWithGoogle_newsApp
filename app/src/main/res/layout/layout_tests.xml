@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        style="@style/ToolBarStyle">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbar_title_text"
+            android:layout_gravity="center"
+            android:textSize="@dimen/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/baseline_eight"
+        android:paddingLeft="@dimen/baseline_eight"
+        android:paddingRight="@dimen/baseline_eight"
+        android:paddingStart="@dimen/baseline_eight"
+        android:background="@color/list_item_background"
+        android:layout_below="@id/toolbar_view">
+
+        <ImageView
+            android:id="@+id/article_image"
+            android:layout_width="@dimen/article_image"
+            android:layout_height="@dimen/article_image"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:contentDescription="@string/article_image_description"
+            tools:src="@drawable/kitten" />
+
+        <RelativeLayout
+            android:id="@+id/text_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/baseline_eight"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                style="@style/overline_text"
+                tools:text="Author" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                style="@style/overline_text"
+                android:layout_alignParentEnd="true"
+                tools:text="July 29, 2018" />
+
+            <TextView
+                android:id="@+id/article_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/author"
+                android:layout_alignParentStart="true"
+                style="@style/articleTitle"
+                tools:text="Play on: how video games are changing the way we coach youth football" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

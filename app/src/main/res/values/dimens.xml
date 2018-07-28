@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="overline_text">12sp</dimen>
+    <dimen name="article_title_text">16sp</dimen>
+    <dimen name="toolbar_title">24sp</dimen>
+    <dimen name="list_item_height">88dp</dimen>
+    <dimen name="baseline_eight">8dp</dimen>
+    <dimen name="baseline_sixteen">16dp</dimen>
+    <dimen name="baseline_twentyfour">24dp</dimen>
+    <dimen name="article_image">72dp</dimen>
+</resources>

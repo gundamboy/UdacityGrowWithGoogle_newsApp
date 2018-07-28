@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f5f3f2</color>
+    <color name="statusBarColor">#f5f3f2</color>
+    <color name="colorPrimaryDark">#f5f3f2</color>
+    <color name="colorAccent">#16615d</color>
+    <color name="textColorPrimary">#4d4743</color>
+    <color name="list_item_background">#f1eedd</color>
+    <color name="windowBackground">#eec398</color>
+    <color name="captionText">#8caead</color>
+    <color name="listDividerColor">#d8d6d3</color>
+</resources>
