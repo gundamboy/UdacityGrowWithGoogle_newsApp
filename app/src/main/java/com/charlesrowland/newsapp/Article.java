@@ -12,17 +12,14 @@ public class Article {
     // webUrl
     private String mArticleUrl;
 
-    // pillarName
-    private String mArticleCategory;
-
     // tags[webTitle]
     private String mArticleAuthor;
 
     // fields[thumbnail]
     private Bitmap mArticleThumbnail;
 
-    // default image in case an article does not have an image
-    private int mDefaultImageId;
+    // determines the image to use. either from the api or from the drawable folder
+    private boolean mHasThumbnail;
 
     /**
      * Constructs a new {@link Article} object
@@ -30,15 +27,14 @@ public class Article {
      * @param mArticlePublicationDate    date the article was published
      * @param mArticleTitle              title of the article
      * @param mArticleUrl                url of the article
-     * @param mArticleCategory           the category the article is in
      * @param mArticleAuthor             the author of the article
+     * @param mHasThumbnail              true or false.
      * @param mArticleThumbnail          url of the thumbnail image associated with the article
      */
-    public Article(String mArticlePublicationDate, String mArticleTitle, String mArticleUrl, String mArticleCategory, String mArticleAuthor, Bitmap mArticleThumbnail) {
+    public Article(String mArticlePublicationDate, String mArticleTitle, String mArticleUrl, String mArticleAuthor, boolean mHasThumbnail, Bitmap mArticleThumbnail) {
         this.mArticlePublicationDate = mArticlePublicationDate;
         this.mArticleTitle = mArticleTitle;
         this.mArticleUrl = mArticleUrl;
-        this.mArticleCategory = mArticleCategory;
         this.mArticleAuthor = mArticleAuthor;
         this.mArticleThumbnail = mArticleThumbnail;
     }
@@ -48,17 +44,15 @@ public class Article {
      * @param mArticlePublicationDate    date the article was published
      * @param mArticleTitle              title of the article
      * @param mArticleUrl                url of the article
-     * @param mArticleCategory           the category the article is in
      * @param mArticleAuthor             the author of the article
-     * @param mDefaultImageId            default image if there is no thumbnail to display
+     * @param mHasThumbnail              true or false.
      */
-    public Article(String mArticlePublicationDate, String mArticleTitle, String mArticleUrl, String mArticleCategory, String mArticleAuthor, int mDefaultImageId) {
+    public Article(String mArticlePublicationDate, String mArticleTitle, String mArticleUrl, String mArticleAuthor, boolean mHasThumbnail) {
         this.mArticlePublicationDate = mArticlePublicationDate;
         this.mArticleTitle = mArticleTitle;
         this.mArticleUrl = mArticleUrl;
-        this.mArticleCategory = mArticleCategory;
         this.mArticleAuthor = mArticleAuthor;
-        this.mDefaultImageId = mDefaultImageId;
+        this.mHasThumbnail = mHasThumbnail;
     }
 
     public String getmArticlePublicationDate() {
@@ -73,10 +67,6 @@ public class Article {
         return mArticleUrl;
     }
 
-    public String getmArticleCategory() {
-        return mArticleCategory;
-    }
-
     public String getmArticleAuthor() {
         return mArticleAuthor;
     }
@@ -85,7 +75,7 @@ public class Article {
         return mArticleThumbnail;
     }
 
-    public int getmDefaultImageId() {
-        return mDefaultImageId;
+    public boolean getmHasThumbnail() {
+        return mHasThumbnail;
     }
 }
