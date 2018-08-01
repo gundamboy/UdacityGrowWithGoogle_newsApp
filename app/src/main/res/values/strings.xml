@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">NewsApp</string>
     <string name="article_image_description">article image</string>
-    <string name="toolbar_title_text">Daily News</string>
+    <string name="toolbar_title_text">The Digital Daily</string>
+    <string name="section_title_music">Music</string>
+    <string name="section_title_games">Games</string>
+    <string name="section_title_tech">Technology</string>
+    <string name="section_title_science">Science</string>
+    <string name="section_title_comics">Comics</string>
+    <string name="section_title_default">News</string>
+    <string name="no_articles">Uh oh! It looks like there are no news articles. You know, they say no news is good news. Check back again a little later; maybe something newsworthy will have happened then.</string>
+    <string name="no_internet">Ah nuts, it looks like there is a problem with your internet connection. You should probably get that fixed.</string>
 </resources>

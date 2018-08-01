@@ -10,12 +10,18 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:statusBarColor">@color/statusBarColor</item>
         <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:windowBackground">@color/altWindowBackgroundColor</item>
     </style>
 
-    <style name="overline_text" parent="@style/AppTheme">
+    <style name="author_text" parent="@style/AppTheme">
         <item name="android:textColor">@color/captionText</item>
-        <item name="android:textSize">@dimen/overline_text</item>
+        <item name="android:textSize">@dimen/author_text_size</item>
+    </style>
+
+    <style name="section_date_text" parent="@style/AppTheme">
+        <item name="android:textColor">@color/captionText</item>
+        <item name="android:textSize">@dimen/section_date_text_size</item>
+        <item name="android:textStyle">italic</item>
     </style>
 
     <style name="articleTitle" parent="@style/AppTheme">
