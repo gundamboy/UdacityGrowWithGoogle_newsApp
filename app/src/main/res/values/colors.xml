@@ -9,4 +9,5 @@
     <color name="windowBackground">#eec398</color>
     <color name="captionText">#8caead</color>
     <color name="listDividerColor">#d8d6d3</color>
+    <color name="altWindowBackgroundColor">#d8d6d3</color>
 </resources>

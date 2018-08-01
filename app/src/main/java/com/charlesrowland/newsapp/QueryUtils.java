@@ -186,38 +186,28 @@ public final class QueryUtils {
 
                 // it's possible the fields array can come back without an author or an image url.
                 // set up some defaults to prevent a crash. users would be pretty mad if there's a crash.
-                // there are 2 constructors in the Article class. 1 for a bitmap from the api and one
-                // that does not take in a bitmap. the hasApiThumbnail lets us know which constructor to use.
-                // then in the adapter we can set the proper image
-                Boolean hasApiThumbnail = false;
                 String articleAuthor = "Unknown Contributor";
                 String articleImage = "";
 
                 // grab all the stuff we need for our Article object
-                // Article(String mArticlePublicationDate, String mArticleTitle, String mArticleUrl, String mArticleAuthor, boolean mHasThumbnail, Bitmap mArticleThumbnail)
-                // Article(String mArticlePublicationDate, String mArticleTitle, String mArticleUrl, String mArticleAuthor, boolean mHasThumbnail)
                 String publishDate = currentResult.getString("webPublicationDate");
                 String articleTitle = currentResult.getString("webTitle");
                 String articleUrl = currentResult.getString("webUrl");
+                String articleSection = currentResult.getString("sectionName");
 
-                if (!TextUtils.isEmpty(fields.getString("byline"))) {
+                if (fields.has("byline")) {
                     articleAuthor = fields.getString("byline");
                 }
 
-                if (!TextUtils.isEmpty(fields.getString("thumbnail"))) {
+                if (fields.has("thumbnail") && !TextUtils.isEmpty(fields.getString("thumbnail"))) {
                     articleImage = fields.getString("thumbnail");
-                    hasApiThumbnail = true;
                 }
 
                 // add a new Article based on the thumbnail image
-                if (hasApiThumbnail) {
-                    articles.add(new Article(publishDate, articleTitle, articleUrl, articleAuthor, hasApiThumbnail, downloadArticleImage(articleImage)));
-                } else {
-                    articles.add(new Article(publishDate, articleTitle, articleUrl, articleAuthor, hasApiThumbnail));
-                }
+                articles.add(new Article(publishDate, articleTitle, articleSection, articleUrl, articleAuthor, downloadArticleImage(articleImage)));
             }
         } catch (JSONException e) {
-            Log.e(LOG_TAG, "Problem parsing the earthquake JSON results", e);
+            Log.e(LOG_TAG, "Problem parsing the article JSON results", e);
         }
 
         // return all the things!

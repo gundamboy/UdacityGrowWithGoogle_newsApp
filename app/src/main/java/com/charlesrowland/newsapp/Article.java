@@ -8,6 +8,8 @@ public class Article {
 
     // webTitle
     private String mArticleTitle;
+    // sectionName
+    private String mSectionName;
 
     // webUrl
     private String mArticleUrl;
@@ -18,9 +20,6 @@ public class Article {
     // fields[thumbnail]
     private Bitmap mArticleThumbnail;
 
-    // determines the image to use. either from the api or from the drawable folder
-    private boolean mHasThumbnail;
-
     /**
      * Constructs a new {@link Article} object
      *
@@ -28,31 +27,15 @@ public class Article {
      * @param mArticleTitle              title of the article
      * @param mArticleUrl                url of the article
      * @param mArticleAuthor             the author of the article
-     * @param mHasThumbnail              true or false.
      * @param mArticleThumbnail          url of the thumbnail image associated with the article
      */
-    public Article(String mArticlePublicationDate, String mArticleTitle, String mArticleUrl, String mArticleAuthor, boolean mHasThumbnail, Bitmap mArticleThumbnail) {
+    public Article(String mArticlePublicationDate, String mArticleTitle, String mSectionName, String mArticleUrl, String mArticleAuthor, Bitmap mArticleThumbnail) {
         this.mArticlePublicationDate = mArticlePublicationDate;
         this.mArticleTitle = mArticleTitle;
+        this.mSectionName = mSectionName;
         this.mArticleUrl = mArticleUrl;
         this.mArticleAuthor = mArticleAuthor;
         this.mArticleThumbnail = mArticleThumbnail;
-    }
-    /**
-     * Constructs a new {@link Article} object
-     *
-     * @param mArticlePublicationDate    date the article was published
-     * @param mArticleTitle              title of the article
-     * @param mArticleUrl                url of the article
-     * @param mArticleAuthor             the author of the article
-     * @param mHasThumbnail              true or false.
-     */
-    public Article(String mArticlePublicationDate, String mArticleTitle, String mArticleUrl, String mArticleAuthor, boolean mHasThumbnail) {
-        this.mArticlePublicationDate = mArticlePublicationDate;
-        this.mArticleTitle = mArticleTitle;
-        this.mArticleUrl = mArticleUrl;
-        this.mArticleAuthor = mArticleAuthor;
-        this.mHasThumbnail = mHasThumbnail;
     }
 
     public String getmArticlePublicationDate() {
@@ -61,6 +44,10 @@ public class Article {
 
     public String getmArticleTitle() {
         return mArticleTitle;
+    }
+
+    public String getmSectionName() {
+        return mSectionName;
     }
 
     public String getmArticleUrl() {
@@ -73,9 +60,5 @@ public class Article {
 
     public Bitmap getmArticleThumbnail() {
         return mArticleThumbnail;
-    }
-
-    public boolean getmHasThumbnail() {
-        return mHasThumbnail;
     }
 }

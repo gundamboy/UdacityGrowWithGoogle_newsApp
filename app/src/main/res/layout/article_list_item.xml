@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/list_item_height"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:paddingEnd="@dimen/baseline_eight"
     android:paddingLeft="@dimen/baseline_eight"
@@ -33,25 +33,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="top"
-            style="@style/overline_text"
+            style="@style/author_text"
             tools:text="Author" />
 
+
         <TextView
-            android:id="@+id/date"
+            android:id="@+id/section_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="top"
-            style="@style/overline_text"
-            android:layout_alignParentEnd="true"
-            tools:text="July 29, 2018" />
+            android:layout_below="@+id/author"
+            style="@style/section_date_text"
+            tools:text="In Music on July 29, 2018" />
 
         <TextView
             android:id="@+id/article_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/author"
+            android:layout_below="@+id/section_date"
             android:layout_alignParentStart="true"
             style="@style/articleTitle"
+            android:textSize="14sp"
             tools:text="Play on: how video games are changing the way we coach youth football" />
 
     </RelativeLayout>

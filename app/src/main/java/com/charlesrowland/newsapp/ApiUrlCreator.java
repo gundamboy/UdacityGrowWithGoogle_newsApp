@@ -11,11 +11,11 @@ public final class ApiUrlCreator {
     private ApiUrlCreator() {}
 
     // strings for the sections/tags that will be in each tab. these are constants. i promise i am not shouting.
-    private static final String SECTION_MUSIC_METAL = "&section=music&tag=music/metal";
-    private static final String SECTION_GAMES = "&section=games";
-    private static final String SECTION_TECH = "&section=technology";
-    private static final String SECTION_SCIENCE = "&section=science";
-    private static final String SECTION_BOOKS_COMICS = "&section=books&tag=books/comics";
+    public static final String SECTION_MUSIC_METAL = "&section=music&tag=music/metal";
+    public static final String SECTION_GAMES = "&section=games";
+    public static final String SECTION_TECH = "&section=technology";
+    public static final String SECTION_SCIENCE = "&section=science";
+    public static final String SECTION_BOOKS_COMICS = "&section=books&tag=books/comics";
 
     // the basic part of the url that never changes
     // this grabs the thumbnail and byline by default because we always want that
@@ -47,5 +47,4 @@ public final class ApiUrlCreator {
         // url is done! return it.
         return stringBuilder.toString();
     }
-
 }
