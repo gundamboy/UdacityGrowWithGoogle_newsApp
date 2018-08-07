@@ -1,7 +1,9 @@
 package com.charlesrowland.newsapp;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -13,11 +15,15 @@ public class MainActivityPagerAdapter extends FragmentPagerAdapter {
 
     // context
     Context context;
+    SharedPreferences sharedPrefs;
 
     // constructor.
-    public MainActivityPagerAdapter(FragmentManager fm, Context context) {
+    public MainActivityPagerAdapter(FragmentManager fm, SharedPreferences sharedPrefs, Context context) {
         super(fm);
         this.context = context;
+        this.sharedPrefs = sharedPrefs;
+        //this.orderBy = orderBy;
+
     }
 
     // get the titles for the tabs=
@@ -30,7 +36,7 @@ public class MainActivityPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return context.getString(R.string.section_title_games);
             case 2:
-                return context.getString(R.string.section_title_comics);
+                return context.getString(R.string.section_title_books);
             case 3:
                 return context.getString(R.string.section_title_tech);
             case 4:
@@ -45,27 +51,29 @@ public class MainActivityPagerAdapter extends FragmentPagerAdapter {
         // grabs the current position and sends an argument bundle to the fragment
         // so it can display the right stuff.
 
+        String orderBy  = sharedPrefs.getString(context.getString(R.string.settings_order_by_key), context.getString(R.string.settings_order_by_default));
+        Log.v(LOG_TAG, "orderBy: " + orderBy);
         Bundle bundle = new Bundle();
 
        switch (position) {
             case 0:
-                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_MUSIC_METAL));
+                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_MUSIC, null, orderBy));
                 break;
             case 1:
-                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_GAMES));
+                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_GAMES, null, orderBy));
                 break;
             case 2:
-                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_BOOKS_COMICS));
+                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_BOOKS, null, orderBy));
                 break;
             case 3:
-                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_TECH));
+                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_TECH, null, orderBy));
                 break;
             case 4:
-                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_SCIENCE));
+                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_SCIENCE, null, orderBy));
                 break;
             default:
                 // in the instance something wacky happens send the url over as null
-                bundle.putString("url", ApiUrlCreator.buildUrl(null));
+                bundle.putString("url", ApiUrlCreator.buildUrl(null, null, null));
        }
 
         // fragment time. i really don't like fragments......

@@ -3,6 +3,7 @@ package com.charlesrowland.newsapp;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -29,6 +30,7 @@ import java.util.List;
 public class NewsSectionFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<Article>> {
 
     public static final String LOG_TAG = NewsSectionFragment.class.getSimpleName();
+    private static final int NEWS_LOADER_ID = 1;
 
     // set some views
     SwipeRefreshLayout swipeRefreshLayout;
@@ -40,7 +42,7 @@ public class NewsSectionFragment extends Fragment implements LoaderManager.Loade
     private ArticleAdapter mAdapter;
 
     // empty url construct
-    private String api_url = ApiUrlCreator.buildUrl(null);
+    private String api_url = ApiUrlCreator.buildUrl(null, null, null);
 
     public NewsSectionFragment() {
         // Required empty public constructor
@@ -54,6 +56,7 @@ public class NewsSectionFragment extends Fragment implements LoaderManager.Loade
 
         // the url we need to query comes into the fragment as arguments
         String url = getArguments().getString("url");
+        Log.v(LOG_TAG, "url: " + url);
         if (!TextUtils.isEmpty(url)) {
             api_url = url;
         }
@@ -80,7 +83,7 @@ public class NewsSectionFragment extends Fragment implements LoaderManager.Loade
             emptyText.setText(getString(R.string.no_internet));
         } else {
             // internet works YEAH! start it up!
-            getLoaderManager().initLoader(1, null, this);
+            getLoaderManager().initLoader(NEWS_LOADER_ID, null, this);
         }
 
         return rootView;
@@ -146,7 +149,12 @@ public class NewsSectionFragment extends Fragment implements LoaderManager.Loade
     private void restartLoader() {
         if (checkInterntStatus()) {
             swipeRefreshLayout.setRefreshing(true);
-            getLoaderManager().restartLoader(1, null, this);
+            //getLoaderManager().initLoader(NEWS_LOADER_ID, null, this);
+
+            // we have to restart the main activity because that is where the tabs are initiated
+            // and that is how i set up my feeds to load and im too lazy to redo the ENTIRE architecture.
+            Intent homeIntent = new Intent(getContext(), MainActivity.class);
+            startActivity(homeIntent);
         } else {
             // no internet? you get NOTHING!
             swipeRefreshLayout.setRefreshing(false);
@@ -160,9 +168,8 @@ public class NewsSectionFragment extends Fragment implements LoaderManager.Loade
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                if (!getLoaderManager().hasRunningLoaders()) {
-                    restartLoader();
-                }
+                getLoaderManager().destroyLoader(NEWS_LOADER_ID);
+                restartLoader();
             }
         });
     }
