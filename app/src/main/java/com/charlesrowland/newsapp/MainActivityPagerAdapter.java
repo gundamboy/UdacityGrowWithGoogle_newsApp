@@ -52,18 +52,22 @@ public class MainActivityPagerAdapter extends FragmentPagerAdapter {
         // so it can display the right stuff.
 
         String orderBy  = sharedPrefs.getString(context.getString(R.string.settings_order_by_key), context.getString(R.string.settings_order_by_default));
-        Log.v(LOG_TAG, "orderBy: " + orderBy);
+        String musicTag  = sharedPrefs.getString(context.getString(R.string.settings_music_choices_key), context.getString(R.string.settings_music_default_value));
+        String booksTag  = sharedPrefs.getString(context.getString(R.string.settings_books_choices_key), context.getString(R.string.settings_books_default_value));
+
+        Log.v(LOG_TAG, "orderBy: " + orderBy + ", musicTag: " + musicTag + ", booksTag: " + booksTag);
+
         Bundle bundle = new Bundle();
 
        switch (position) {
             case 0:
-                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_MUSIC, null, orderBy));
+                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_MUSIC, musicTag, orderBy));
                 break;
             case 1:
                 bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_GAMES, null, orderBy));
                 break;
             case 2:
-                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_BOOKS, null, orderBy));
+                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_BOOKS, booksTag, orderBy));
                 break;
             case 3:
                 bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_TECH, null, orderBy));

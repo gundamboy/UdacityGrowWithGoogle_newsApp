@@ -1,6 +1,7 @@
 package com.charlesrowland.newsapp;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
@@ -14,7 +15,8 @@ public final class ApiUrlCreator {
     private static final String LOG_TAG = ApiUrlCreator.class.getSimpleName();
 
     // empty constructor. non shall pass.
-    private ApiUrlCreator() {}
+    private ApiUrlCreator() {
+    }
 
     // strings for the sections/tags that will be in each tab. these are constants. i promise i am not shouting.
     private static final String SHOW_FIELDS = "show-fields=thumbnail,byline";
@@ -54,7 +56,7 @@ public final class ApiUrlCreator {
             // add the fields
             stringBuilder.append(SHOW_FIELDS);
 
-            if (tag != null) {
+            if (tag != null && !tag.equals("All")) {
                 stringBuilder.append(TAG_PREFIX);
                 stringBuilder.append(tag);
             }

@@ -13,11 +13,126 @@
     <string-array name="settings_music_choice_labels">
         <item>@string/settings_show_music_by_genre_all_label</item>
         <item>@string/settings_show_music_by_genre_blues_label</item>
+        <item>@string/settings_show_music_by_genre_classical_label</item>
+        <item>@string/settings_show_music_by_genre_country_label</item>
+        <item>@string/settings_show_music_by_genre_dance_label</item>
+        <item>@string/settings_show_music_by_genre_drumnbass_label</item>
+        <item>@string/settings_show_music_by_genre_dubstep_label</item>
+        <item>@string/settings_show_music_by_genre_electronicmusic_label</item>
+        <item>@string/settings_show_music_by_genre_experimental_label</item>
+        <item>@string/settings_show_music_by_genre_folk_label</item>
+        <item>@string/settings_show_music_by_genre_hiphop_label</item>
+        <item>@string/settings_show_music_by_genre_indie_label</item>
+        <item>@string/settings_show_music_by_genre_jazz_label</item>
+        <item>@string/settings_show_music_by_genre_metal_label</item>
+        <item>@string/settings_show_music_by_genre_opera_label</item>
+        <item>@string/settings_show_music_by_genre_popandrock_label</item>
+        <item>@string/settings_show_music_by_genre_punk_label</item>
+        <item>@string/settings_show_music_by_genre_randb_label</item>
+        <item>@string/settings_show_music_by_genre_rap_label</item>
+        <item>@string/settings_show_music_by_genre_reggae_label</item>
+        <item>@string/settings_show_music_by_genre_roxymusic_label</item>
+        <item>@string/settings_show_music_by_genre_rudimental_label</item>
     </string-array>
 
     <string-array name="settings_music_choice_values">
-        <item>@string/settings_music_default_value</item>
+        <item>@string/settings_show_music_by_genre_all_value</item>
         <item>@string/settings_show_music_by_genre_blues_value</item>
+        <item>@string/settings_show_music_by_genre_classical_value</item>
+        <item>@string/settings_show_music_by_genre_country_value</item>
+        <item>@string/settings_show_music_by_genre_dance_value</item>
+        <item>@string/settings_show_music_by_genre_drumnbass_value</item>
+        <item>@string/settings_show_music_by_genre_dubstep_value</item>
+        <item>@string/settings_show_music_by_genre_electronicmusic_value</item>
+        <item>@string/settings_show_music_by_genre_experimental_value</item>
+        <item>@string/settings_show_music_by_genre_folk_value</item>
+        <item>@string/settings_show_music_by_genre_hiphop_value</item>
+        <item>@string/settings_show_music_by_genre_indie_value</item>
+        <item>@string/settings_show_music_by_genre_jazz_value</item>
+        <item>@string/settings_show_music_by_genre_metal_value</item>
+        <item>@string/settings_show_music_by_genre_opera_value</item>
+        <item>@string/settings_show_music_by_genre_popandrock_value</item>
+        <item>@string/settings_show_music_by_genre_punk_value</item>
+        <item>@string/settings_show_music_by_genre_randb_value</item>
+        <item>@string/settings_show_music_by_genre_rap_value</item>
+        <item>@string/settings_show_music_by_genre_reggae_value</item>
+        <item>@string/settings_show_music_by_genre_roxymusic_value</item>
+        <item>@string/settings_show_music_by_genre_rudimental_value</item>
     </string-array>
 
+    <string-array name="settings_books_labels">
+        <item>@string/settings_books_by_genre_all_label</item>
+        <item>@string/settings_books_by_genre_adventure_label</item>
+        <item>@string/settings_books_by_genre_art_label</item>
+        <item>@string/settings_books_by_genre_biography_label</item>
+        <item>@string/settings_books_by_genre_classics_label</item>
+        <item>@string/settings_books_by_genre_comics_label</item>
+        <item>@string/settings_books_by_genre_craftsandhobbies_label</item>
+        <item>@string/settings_books_by_genre_crime_label</item>
+        <item>@string/settings_books_by_genre_ebooks_label</item>
+        <item>@string/settings_books_by_genre_ecominics_label</item>
+        <item>@string/settings_books_by_genre_essays_label</item>
+        <item>@string/settings_books_by_genre_fairytales_label</item>
+        <item>@string/settings_books_by_genre_fantasy_label</item>
+        <item>@string/settings_books_by_genre_fiction_label</item>
+        <item>@string/settings_books_by_genre_film_label</item>
+        <item>@string/settings_books_by_genre_food_label</item>
+        <item>@string/settings_books_by_genre_history_label</item>
+        <item>@string/settings_books_by_genre_horror_label</item>
+        <item>@string/settings_books_by_genre_journalism_label</item>
+        <item>@string/settings_books_by_genre_manga_label</item>
+        <item>@string/settings_books_by_genre_manuscripts_label</item>
+        <item>@string/settings_books_by_genre_music_label</item>
+        <item>@string/settings_books_by_genre_philosophy_label</item>
+        <item>@string/settings_books_by_genre_picturebooks_label</item>
+        <item>@string/settings_books_by_genre_poetry_label</item>
+        <item>@string/settings_books_by_genre_politics_label</item>
+        <item>@string/settings_books_by_genre_religion_label</item>
+        <item>@string/settings_books_by_genre_romance_label</item>
+        <item>@string/settings_books_by_genre_sciencefiction_label</item>
+        <item>@string/settings_books_by_genre_society_label</item>
+        <item>@string/settings_books_by_genre_sportandleisure_label</item>
+        <item>@string/settings_books_by_genre_stage_label</item>
+        <item>@string/settings_books_by_genre_teen_label</item>
+        <item>@string/settings_books_by_genre_thrillers_label</item>
+        <item>@string/settings_books_by_genre_truecrime_label</item>
+    </string-array>
+
+    <string-array name="settings_books_values">
+        <item>@string/settings_books_by_genre_all_value</item>
+        <item>@string/settings_books_by_genre_adventure_value</item>
+        <item>@string/settings_books_by_genre_art_value</item>
+        <item>@string/settings_books_by_genre_biography_value</item>
+        <item>@string/settings_books_by_genre_classics_value</item>
+        <item>@string/settings_books_by_genre_comics_value</item>
+        <item>@string/settings_books_by_genre_craftsandhobbies_value</item>
+        <item>@string/settings_books_by_genre_crime_value</item>
+        <item>@string/settings_books_by_genre_ebooks_value</item>
+        <item>@string/settings_books_by_genre_ecominics_value</item>
+        <item>@string/settings_books_by_genre_essays_value</item>
+        <item>@string/settings_books_by_genre_fairytales_value</item>
+        <item>@string/settings_books_by_genre_fantasy_value</item>
+        <item>@string/settings_books_by_genre_fiction_value</item>
+        <item>@string/settings_books_by_genre_film_value</item>
+        <item>@string/settings_books_by_genre_food_value</item>
+        <item>@string/settings_books_by_genre_history_value</item>
+        <item>@string/settings_books_by_genre_horror_value</item>
+        <item>@string/settings_books_by_genre_journalism_value</item>
+        <item>@string/settings_books_by_genre_manga_value</item>
+        <item>@string/settings_books_by_genre_manuscripts_value</item>
+        <item>@string/settings_books_by_genre_music_value</item>
+        <item>@string/settings_books_by_genre_philosophy_value</item>
+        <item>@string/settings_books_by_genre_picturebooks_value</item>
+        <item>@string/settings_books_by_genre_poetry_value</item>
+        <item>@string/settings_books_by_genre_politics_value</item>
+        <item>@string/settings_books_by_genre_religion_value</item>
+        <item>@string/settings_books_by_genre_romance_value</item>
+        <item>@string/settings_books_by_genre_sciencefiction_value</item>
+        <item>@string/settings_books_by_genre_society_value</item>
+        <item>@string/settings_books_by_genre_sportandleisure_value</item>
+        <item>@string/settings_books_by_genre_stage_value</item>
+        <item>@string/settings_books_by_genre_teen_value</item>
+        <item>@string/settings_books_by_genre_thrillers_value</item>
+        <item>@string/settings_books_by_genre_truecrime_value</item>
+    </string-array>
 </resources>
