@@ -1,13 +1,270 @@
 <resources>
     <string name="app_name">The Digital Daily</string>
+    <string name="app_nam_settings">The Digital Daily Settings</string>
     <string name="article_image_description">article image</string>
     <string name="toolbar_title_text">The Digital Daily</string>
     <string name="section_title_music">Music</string>
     <string name="section_title_games">Games</string>
     <string name="section_title_tech">Technology</string>
     <string name="section_title_science">Science</string>
+    <string name="section_title_books">Books</string>
     <string name="section_title_comics">Comics</string>
     <string name="section_title_default">News</string>
     <string name="no_articles">Uh oh! It looks like there are no news articles. You know, they say no news is good news. Check back again a little later; maybe something newsworthy will have happened then.</string>
     <string name="no_internet">Ah nuts, it looks like there is a problem with your internet connection. You should probably get that fixed.</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">Daily Digital Settings</string>
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order Articles By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">newest</string>
+
+    <!-- Label for order-by newest option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+
+    <!-- Label for order-by oldest option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <!-- Strings For Music Preference [CHAR LIMIT=30] -->
+    <string name="settings_music_choices_label">Music Options</string>
+    <string name="settings_music_choices_key" translatable="false">music_options</string>
+    <string name="settings_music_default_value" translatable="false">All</string>
+
+    <!-- Label for tag=music/blues [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_all_label">All</string>
+    <string name="settings_show_music_by_genre_all_value" translatable="false">all</string>
+
+    <!-- Label for tag=music/blues [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_blues_label">Blues</string>
+    <string name="settings_show_music_by_genre_blues_value" translatable="false">music/blues</string>
+
+    <!-- Label for tag=music/classical-music-and-opera [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_classical_label">Classical</string>
+    <string name="settings_show_music_by_genre_classical_value" translatable="false">music/classical-music-and-opera</string>
+
+    <!-- Label for tag=music/country [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_country_label">Country</string>
+    <string name="settings_show_music_by_genre_country_value" translatable="false">music/country</string>
+
+    <!-- Label for tag=music/dance-music [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_dance_label">Dance</string>
+    <string name="settings_show_music_by_genre_dance_value" translatable="false">music/dance-music</string>
+
+    <!-- Label for tag=music/drum-n-bass [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_drumnbass_label">Drum-n-bass</string>
+    <string name="settings_show_music_by_genre_drumnbass_value" translatable="false">music/drum-n-bass</string>
+
+    <!-- Label for tag=music/dubstep [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_dubstep_label">Dubstep</string>
+    <string name="settings_show_music_by_genre_dubstep_value" translatable="false">music/dubstep</string>
+
+    <!-- Label for tag=music/electronicmusic [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_electronicmusic_label">Electronic</string>
+    <string name="settings_show_music_by_genre_electronicmusic_value" translatable="false">music/electronicmusic</string>
+
+    <!-- Label for tag=music/experimental-music [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_experimental_label">Experimental</string>
+    <string name="settings_show_music_by_genre_experimental_value" translatable="false">music/experimental-music</string>
+
+    <!-- Label for tag=music/folk [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_folk_label">Folk</string>
+    <string name="settings_show_music_by_genre_folk_value" translatable="false">music/folk</string>
+
+    <!-- Label for tag=music/hip-hop [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_hiphop_label">Hip-Hop</string>
+    <string name="settings_show_music_by_genre_hiphop_value" translatable="false">music/hip-hop</string>
+
+    <!-- Label for tag=music/indie [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_indie_label">Indie</string>
+    <string name="settings_show_music_by_genre_indie_value" translatable="false">music/indie</string>
+
+    <!-- Label for tag=music/jazz [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_jazz_label">Jazz</string>
+    <string name="settings_show_music_by_genre_jazz_value" translatable="false">music/jazz</string>
+
+    <!-- Label for tag=music/metal [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_metal_label">Metal</string>
+    <string name="settings_show_music_by_genre_metal_value" translatable="false">music/metal</string>
+
+    <!-- Label for tag=music/opera [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_opera_label">Opera</string>
+    <string name="settings_show_music_by_genre_opera_value" translatable="false">music/opera</string>
+
+    <!-- Label for tag=music/popandrock [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_popandrock_label">Pop and Rock</string>
+    <string name="settings_show_music_by_genre_popandrock_value" translatable="false">music/popandrock</string>
+
+    <!-- Label for tag=music/punk [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_punk_label">Punk</string>
+    <string name="settings_show_music_by_genre_punk_value" translatable="false">music/punk</string>
+
+    <!-- Label for tag=music/r-and-b [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_randb_label">R and B</string>
+    <string name="settings_show_music_by_genre_randb_value" translatable="false">music/r-and-b</string>
+
+    <!-- Label for tag=music/rap [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_rap_label">Rap</string>
+    <string name="settings_show_music_by_genre_rap_value" translatable="false">music/rap</string>
+
+    <!-- Label for tag=music/reggae [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_reggae_label">Rggae</string>
+    <string name="settings_show_music_by_genre_reggae_value" translatable="false">music/reggae</string>
+
+    <!-- Label for tag=music/roxymusic [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_roxymusic_label">Roxy music</string>
+    <string name="settings_show_music_by_genre_roxymusic_value" translatable="false">music/roxymusic</string>
+
+    <!-- Label for tag=music/rudimental [CHAR LIMIT=20] -->
+    <string name="settings_show_music_by_genre_rudimental_label">Rudimental</string>
+    <string name="settings_show_music_by_genre_rudimental_value" translatable="false">music/rudimental</string>
+
+    <!-- Strings For Book Preferences [CHAR LIMIT=30] -->
+    <string name="settings_books_choices_label">Books Options</string>
+    <string name="settings_books_choices_key" translatable="false">books_options</string>
+    <string name="settings_books_default_value" translatable="false">All</string>
+
+    <!-- Label for tag=music/all [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_all_label">All</string>
+    <string name="settings_books_by_genre_all_value">books/all</string>
+
+    <!-- Label for tag=music/adventure [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_adventure_label">Adventure</string>
+    <string name="settings_books_by_genre_adventure_value">books/adventure</string>
+
+    <!-- Label for tag=music/artl [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_art_label">Art</string>
+    <string name="settings_books_by_genre_art_value">books/art</string>
+
+    <!-- Label for tag=music/biography [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_biography_label">Biography</string>
+    <string name="settings_books_by_genre_biography_value">books/biography</string>
+
+    <!-- Label for tag=music/classics [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_classics_label">Classics</string>
+    <string name="settings_books_by_genre_classics_value">books/classics</string>
+
+    <!-- Label for tag=music/comics [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_comics_label">Comics</string>
+    <string name="settings_books_by_genre_comics_value">books/comics</string>
+
+    <!-- Label for tag=music/crafts-and-hobbies [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_craftsandhobbies_label">Crafts-and-Hobbies</string>
+    <string name="settings_books_by_genre_craftsandhobbies_value">books/crafts-and-hobbies</string>
+
+    <!-- Label for tag=music/crime [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_crime_label">Crime</string>
+    <string name="settings_books_by_genre_crime_value">books/crime</string>
+
+    <!-- Label for tag=music/ebooks [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_ebooks_label">Ebooks</string>
+    <string name="settings_books_by_genre_ebooks_value">books/ebooks</string>
+
+    <!-- Label for tag=music/ecominics [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_ecominics_label">Economics</string>
+    <string name="settings_books_by_genre_ecominics_value">books/economics</string>
+
+    <!-- Label for tag=music/essays [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_essays_label">Essays</string>
+    <string name="settings_books_by_genre_essays_value">books/essays</string>
+
+    <!-- Label for tag=music/fairytales [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_fairytales_label">Fairytales</string>
+    <string name="settings_books_by_genre_fairytales_value">books/fairytales</string>
+
+    <!-- Label for tag=music/fantasy [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_fantasy_label">Fantasy</string>
+    <string name="settings_books_by_genre_fantasy_value">books/fantasy</string>
+
+    <!-- Label for tag=music/fiction [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_fiction_label">Fiction</string>
+    <string name="settings_books_by_genre_fiction_value">books/fiction</string>
+
+    <!-- Label for tag=music/film [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_film_label">Film</string>
+    <string name="settings_books_by_genre_film_value">books/film</string>
+
+    <!-- Label for tag=music/food [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_food_label">Food</string>
+    <string name="settings_books_by_genre_food_value">books/food</string>
+
+    <!-- Label for tag=music/history [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_history_label">History</string>
+    <string name="settings_books_by_genre_history_value">books/history</string>
+
+    <!-- Label for tag=music/horror [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_horror_label">Horror</string>
+    <string name="settings_books_by_genre_horror_value">books/horror</string>
+
+    <!-- Label for tag=music/journalism [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_journalism_label">Journalism</string>
+    <string name="settings_books_by_genre_journalism_value">books/journalism</string>
+
+    <!-- Label for tag=music/manga [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_manga_label">Manga</string>
+    <string name="settings_books_by_genre_manga_value">books/manga</string>
+
+    <!-- Label for tag=music/manuscripts [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_manuscripts_label">Manuscripts</string>
+    <string name="settings_books_by_genre_manuscripts_value">books/manuscripts</string>
+
+    <!-- Label for tag=music/music [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_music_label">Music</string>
+    <string name="settings_books_by_genre_music_value">books/music</string>
+
+    <!-- Label for tag=music/philosophy [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_philosophy_label">Philosophy</string>
+    <string name="settings_books_by_genre_philosophy_value">books/philosophy</string>
+
+    <!-- Label for tag=music/picture-books [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_picturebooks_label">Picture-Books</string>
+    <string name="settings_books_by_genre_picturebooks_value">books/picture-books</string>
+
+    <!-- Label for tag=music/poetry [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_poetry_label">Poetry</string>
+    <string name="settings_books_by_genre_poetry_value">books/poetry</string>
+
+    <!-- Label for tag=music/politics [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_politics_label">Politics</string>
+    <string name="settings_books_by_genre_politics_value">books/politics</string>
+
+    <!-- Label for tag=music/religion [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_religion_label">Religion</string>
+    <string name="settings_books_by_genre_religion_value">books/religion</string>
+
+    <!-- Label for tag=music/romance [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_romance_label">Romance</string>
+    <string name="settings_books_by_genre_romance_value">books/romance</string>
+
+    <!-- Label for tag=music/science-fiction [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_sciencefiction_label">Science-Fiction</string>
+    <string name="settings_books_by_genre_sciencefiction_value">books/science-fiction</string>
+
+    <!-- Label for tag=music/society [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_society_label">Society</string>
+    <string name="settings_books_by_genre_society_value">books/society</string>
+
+    <!-- Label for tag=music/sportandleisure [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_sportandleisure_label">Sports and leisure</string>
+    <string name="settings_books_by_genre_sportandleisure_value">books/sportandleisure</string>
+
+    <!-- Label for tag=music/stage [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_stage_label">Stage</string>
+    <string name="settings_books_by_genre_stage_value">books/stage</string>
+
+    <!-- Label for tag=music/teen-books [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_teen_label">Teen-Books</string>
+    <string name="settings_books_by_genre_teen_value">books/teen-books</string>
+
+    <!-- Label for tag=music/thrillers [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_thrillers_label">Thrillers</string>
+    <string name="settings_books_by_genre_thrillers_value">books/thrillers</string>
+
+    <!-- Label for tag=music/true-crime [CHAR LIMIT=20] -->
+    <string name="settings_books_by_genre_truecrime_label">True-Crime</string>
+    <string name="settings_books_by_genre_truecrime_value">books/true-crime</string>
+
+
 </resources>

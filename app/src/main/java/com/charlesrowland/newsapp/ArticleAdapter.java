@@ -73,7 +73,6 @@ public class ArticleAdapter extends ArrayAdapter<Article> {
         //TextView articleSection = listItemView.findViewById(R.id.section);
         TextView articleSectionDate = listItemView.findViewById(R.id.section_date);
         String sectionName = currentArticle.getmSectionName();
-        String formattedSectionName = sectionName + " | ";
         String articleDate = formatDate(currentArticle.getmArticlePublicationDate());
         String fullSectionDate = "In " + sectionName + " on " + articleDate;
 

@@ -100,7 +100,7 @@ public final class QueryUtils {
                 Log.e(LOG_TAG, "Error response code: " + urlConnection.getResponseCode());
             }
         } catch (IOException e) {
-            Log.e(LOG_TAG, "Problem retrieving the earthquake JSON results.", e);
+            Log.e(LOG_TAG, "Problem retrieving the News Article JSON results.", e);
         } finally {
             if (urlConnection != null) {
                 urlConnection.disconnect();
@@ -182,8 +182,6 @@ public final class QueryUtils {
                 // grab the info at the current position. i is the position.
                 JSONObject currentResult = resultsArray.getJSONObject(i);
 
-                JSONObject fields = currentResult.getJSONObject("fields");
-
                 // it's possible the fields array can come back without an author or an image url.
                 // set up some defaults to prevent a crash. users would be pretty mad if there's a crash.
                 String articleAuthor = "Unknown Contributor";
@@ -195,13 +193,19 @@ public final class QueryUtils {
                 String articleUrl = currentResult.getString("webUrl");
                 String articleSection = currentResult.getString("sectionName");
 
-                if (fields.has("byline")) {
-                    articleAuthor = fields.getString("byline");
+                if (!currentResult.isNull("fields")) {
+                    JSONObject fields = currentResult.getJSONObject("fields");
+                    if (fields != null) {
+                        if (fields.has("byline")) {
+                            articleAuthor = fields.getString("byline");
+                        }
+
+                        if (fields.has("thumbnail") && !TextUtils.isEmpty(fields.getString("thumbnail"))) {
+                            articleImage = fields.getString("thumbnail");
+                        }
+                    }
                 }
 
-                if (fields.has("thumbnail") && !TextUtils.isEmpty(fields.getString("thumbnail"))) {
-                    articleImage = fields.getString("thumbnail");
-                }
 
                 // add a new Article based on the thumbnail image
                 articles.add(new Article(publishDate, articleTitle, articleSection, articleUrl, articleAuthor, downloadArticleImage(articleImage)));
