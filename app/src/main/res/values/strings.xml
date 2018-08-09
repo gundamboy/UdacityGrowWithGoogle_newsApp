@@ -155,8 +155,8 @@
     <string name="settings_books_by_genre_comics_value">books/comics</string>
 
     <!-- Label for tag=music/crafts-and-hobbies [CHAR LIMIT=20] -->
-    <string name="settings_books_by_genre_craftsandhobbies_label">Crafts-and-Hobbies</string>
-    <string name="settings_books_by_genre_craftsandhobbies_value">books/crafts-and-hobbies</string>
+    <string name="settings_books_by_genre_craftsandhobbies_label">Crafts and Hobbies</string>
+    <string name="settings_books_by_genre_craftsandhobbies_value">books/craft-and-hobbies</string>
 
     <!-- Label for tag=music/crime [CHAR LIMIT=20] -->
     <string name="settings_books_by_genre_crime_label">Crime</string>

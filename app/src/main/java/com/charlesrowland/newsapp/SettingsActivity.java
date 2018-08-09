@@ -39,7 +39,6 @@ public class SettingsActivity extends AppCompatActivity {
 
     }
 
-    /**
     @Override
     public void onBackPressed() {
         // we have to restart the main activity because that is where the tabs are initiated
@@ -47,7 +46,6 @@ public class SettingsActivity extends AppCompatActivity {
         Intent homeIntent = new Intent(this, MainActivity.class);
         startActivity(homeIntent);
     }
-    **/
 
     public static class NewsPreferenceFragment extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
         @Override
