@@ -56,7 +56,7 @@ public final class ApiUrlCreator {
             // add the fields
             stringBuilder.append(SHOW_FIELDS);
 
-            if (tag != null && !tag.equals("All")) {
+            if (tag != null && !tag.equals("all")) {
                 stringBuilder.append(TAG_PREFIX);
                 stringBuilder.append(tag);
             }

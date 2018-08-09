@@ -15,7 +15,7 @@
     <string name="settings_menu_item">Settings</string>
     <string name="settings_title">Daily Digital Settings</string>
 
-    <string name="api_tags_default_value">All</string>
+    <string name="api_tags_default_value">all</string>
 
     <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
     <string name="settings_order_by_label">Order Articles By</string>
@@ -30,6 +30,7 @@
     <string name="settings_order_by_oldest_label">Oldest</string>
     <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
 
+    <!--MUSIC-->
     <!-- Strings For Music Preference [CHAR LIMIT=30] -->
     <string name="settings_music_choices_label">Music Options</string>
     <string name="settings_music_choices_key" translatable="false">music_options</string>
@@ -37,7 +38,7 @@
 
     <!-- Label for tag=music/blues [CHAR LIMIT=20] -->
     <string name="settings_show_music_by_genre_all_label">All</string>
-    <string name="settings_show_music_by_genre_all_value" translatable="false">all</string>
+    <string name="settings_show_music_by_genre_all_value" translatable="false">@string/api_tags_default_value</string>
 
     <!-- Label for tag=music/blues [CHAR LIMIT=20] -->
     <string name="settings_show_music_by_genre_blues_label">Blues</string>
@@ -123,6 +124,7 @@
     <string name="settings_show_music_by_genre_rudimental_label">Regimental</string>
     <string name="settings_show_music_by_genre_rudimental_value" translatable="false">music/rudimental</string>
 
+    <!--BOOKS-->
     <!-- Strings For Book Preferences [CHAR LIMIT=30] -->
     <string name="settings_books_choices_label">Books Options</string>
     <string name="settings_books_choices_key" translatable="false">books_options</string>
@@ -130,7 +132,7 @@
 
     <!-- Label for tag=music/all [CHAR LIMIT=20] -->
     <string name="settings_books_by_genre_all_label">All</string>
-    <string name="settings_books_by_genre_all_value">books/all</string>
+    <string name="settings_books_by_genre_all_value">@string/api_tags_default_value</string>
 
     <!-- Label for tag=music/adventure [CHAR LIMIT=20] -->
     <string name="settings_books_by_genre_adventure_label">Adventure</string>
@@ -268,5 +270,655 @@
     <string name="settings_books_by_genre_truecrime_label">True-Crime</string>
     <string name="settings_books_by_genre_truecrime_value">books/true-crime</string>
 
+    <!--TECHNOLOGY-->
+    <!-- Strings For Technology Preference [CHAR LIMIT=30] -->
+    <string name="settings_technology_label">Technology Options</string>
+    <string name="settings_technology_key" translatable="false">technology</string>
+    <string name="settings_technology_default_value" translatable="false">@string/api_tags_default_value</string>
 
+    <!-- Label for tag=technology/all [CHAR LIMIT=20] -->
+    <string name="settings_technology_all_label">All</string>
+    <string name="settings_technology_all_value" translatable="false">@string/api_tags_default_value</string>
+
+    <!-- Strings for tag=technology/3d [CHAR LIMIT=20] -->
+    <string name="settings_technology_3d_label">3D</string>
+    <string name="settings_technology_3d_value">technology/3d</string>
+
+    <!-- Strings for tag=technology/android [CHAR LIMIT=20] -->
+    <string name="settings_technology_android_label">Android</string>
+    <string name="settings_technology_android_value">technology/android</string>
+
+    <!-- Strings for tag=technology/apple [CHAR LIMIT=20] -->
+    <string name="settings_technology_apple_label">Apple</string>
+    <string name="settings_technology_apple_value">technology/apple</string>
+
+    <!-- Strings for tag=technology/augmented-reality [CHAR LIMIT=20] -->
+    <string name="settings_technology_augmentedreality_label">Augmented-Reality</string>
+    <string name="settings_technology_augmented_reality_value">technology/augmented-reality</string>
+
+    <!-- Strings for tag=technology/biometrics [CHAR LIMIT=20] -->
+    <string name="settings_technology_biometrics_label">Biometrics</string>
+    <string name="settings_technology_biometrics_value">technology/biometrics</string>
+
+    <!-- Strings for tag=technology/broadband [CHAR LIMIT=20] -->
+    <string name="settings_technology_broadband_label">Broadband</string>
+    <string name="settings_technology_broadband_value">technology/broadband</string>
+
+    <!-- Strings for tag=technology/cloud-computing [CHAR LIMIT=20] -->
+    <string name="settings_technology_cloudcomputing_label">Cloud-Computing</string>
+    <string name="settings_technology_cloudcomputing_value">technology/cloud-computing</string>
+
+    <!-- Strings for tag=technology/computing [CHAR LIMIT=20] -->
+    <string name="settings_technology_computing_label">Computing</string>
+    <string name="settings_technology_computing_value">technology/computing</string>
+
+    <!-- Strings for tag=technology/crowdsourcing [CHAR LIMIT=20] -->
+    <string name="settings_technology_crowdsourcing_label">Crowdsourcing</string>
+    <string name="settings_technology_crowdsourcing_value">technology/crowdsourcing</string>
+
+    <!-- Strings for tag=technology/cryptocurrencies [CHAR LIMIT=20] -->
+    <string name="settings_technology_cryptocurrencies_label">Cryptocurrencies</string>
+    <string name="settings_technology_cryptocurrencies_value">technology/cryptocurrencies</string>
+
+    <!-- Strings for tag=technology/cybercrime [CHAR LIMIT=20] -->
+    <string name="settings_technology_cybercrime_label">Cybercrime</string>
+    <string name="settings_technology_cybercrime_value">technology/cybercrime</string>
+
+    <!-- Strings for tag=technology/digitalvideo [CHAR LIMIT=20] -->
+    <string name="settings_technology_digitalvideo_label">Digitalvideo</string>
+    <string name="settings_technology_digitalvideo_value">technology/digitalvideo</string>
+
+    <!-- Strings for tag=technology/drm [CHAR LIMIT=20] -->
+    <string name="settings_technology_drm_label">DRM</string>
+    <string name="settings_technology_drm_value">technology/drm</string>
+
+    <!-- Strings for tag=technology/ereaders [CHAR LIMIT=20] -->
+    <string name="settings_technology_ereaders_label">Ereaders</string>
+    <string name="settings_technology_ereaders_value">technology/ereaders</string>
+
+    <!-- Strings for tag=technology/facial-recognition [CHAR LIMIT=20] -->
+    <string name="settings_technology_facialrecognition_label">Facial-Recognition</string>
+    <string name="settings_technology_facialrecognition_value">technology/facial-recognition</string>
+
+    <!-- Strings for tag=technology/gps [CHAR LIMIT=20] -->
+    <string name="settings_technology_gps_label">Gps</string>
+    <string name="settings_technology_gps_value">technology/gps</string>
+
+    <!-- Strings for tag=technology/hacking [CHAR LIMIT=20] -->
+    <string name="settings_technology_hacking_label">Hacking</string>
+    <string name="settings_technology_hacking_value">technology/hacking</string>
+
+    <!-- Strings for tag=technology/headphones [CHAR LIMIT=20] -->
+    <string name="settings_technology_headphones_label">Headphones</string>
+    <string name="settings_technology_headphones_value">technology/headphones</string>
+
+    <!-- Strings for tag=technology/ibm [CHAR LIMIT=20] -->
+    <string name="settings_technology_ibm_label">IBM</string>
+    <string name="settings_technology_ibm_value">technology/ibm</string>
+
+    <!-- Strings for tag=technology/internet [CHAR LIMIT=20] -->
+    <string name="settings_technology_internet_label">Internet</string>
+    <string name="settings_technology_internet_value">technology/internet</string>
+
+    <!-- Strings for tag=technology/ios [CHAR LIMIT=20] -->
+    <string name="settings_technology_ios_label">Ios</string>
+    <string name="settings_technology_ios_value">technology/ios</string>
+
+    <!-- Strings for tag=technology/isps [CHAR LIMIT=20] -->
+    <string name="settings_technology_isps_label">ISP’s</string>
+    <string name="settings_technology_isps_value">technology/isps</string>
+
+    <!-- Strings for tag=technology/mapping-technologies [CHAR LIMIT=20] -->
+    <string name="settings_technology_mappingtechnologies_label">Mapping-Technologies</string>
+    <string name="settings_technology_mappingtechnologies_value">technology/mapping-technologies</string>
+
+    <!-- Strings for tag=technology/microsoft [CHAR LIMIT=20] -->
+    <string name="settings_technology_microsoft_label">Microsoft</string>
+    <string name="settings_technology_microsoft_value">technology/microsoft</string>
+
+    <!-- Strings for tag=technology/mobilephones [CHAR LIMIT=20] -->
+    <string name="settings_technology_mobilephones_label">Mobilephones</string>
+    <string name="settings_technology_mobilephones_value">technology/mobilephones</string>
+
+    <!-- Strings for tag=technology/net-neutrality [CHAR LIMIT=20] -->
+    <string name="settings_technology_netneutrality_label">Net-Neutrality</string>
+    <string name="settings_technology_netneutrality_value">technology/net-neutrality</string>
+
+    <!-- Strings for tag=technology/p2p [CHAR LIMIT=20] -->
+    <string name="settings_technology_p2p_label">P2P</string>
+    <string name="settings_technology_p2p_value">technology/p2p</string>
+
+    <!-- Strings for tag=technology/piracy [CHAR LIMIT=20] -->
+    <string name="settings_technology_piracy_label">Piracy</string>
+    <string name="settings_technology_piracy_value">technology/piracy</string>
+
+    <!-- Strings for tag=technology/programming [CHAR LIMIT=20] -->
+    <string name="settings_technology_programming_label">Programming</string>
+    <string name="settings_technology_programming_value">technology/programming</string>
+
+    <!-- Strings for tag=technology/raspberry-pi [CHAR LIMIT=20] -->
+    <string name="settings_technology_raspberrypi_label">Raspberry-Pi</string>
+    <string name="settings_technology_raspberrypi_value">technology/raspberry-pi</string>
+
+    <!-- Strings for tag=technology/robots [CHAR LIMIT=20] -->
+    <string name="settings_technology_robots_label">Robots</string>
+    <string name="settings_technology_robots_value">technology/robots</string>
+
+    <!-- Strings for tag=technology/smartphones [CHAR LIMIT=20] -->
+    <string name="settings_technology_smartphones_label">Smartphones</string>
+    <string name="settings_technology_smartphones_value">technology/smartphones</string>
+
+    <!-- Strings for tag=technology/smartwatches [CHAR LIMIT=20] -->
+    <string name="settings_technology_smartwatches_label">Smartwatches</string>
+    <string name="settings_technology_smartwatches_value">technology/smartwatches</string>
+
+    <!-- Strings for tag=technology/software [CHAR LIMIT=20] -->
+    <string name="settings_technology_software_label">Software</string>
+    <string name="settings_technology_software_value">technology/software</string>
+
+    <!-- Strings for tag=technology/startups [CHAR LIMIT=20] -->
+    <string name="settings_technology_startups_label">Startups</string>
+    <string name="settings_technology_startups_value">technology/startups</string>
+
+    <!-- Strings for tag=technology/television [CHAR LIMIT=20] -->
+    <string name="settings_technology_television_label">Television</string>
+    <string name="settings_technology_television_value">technology/television</string>
+
+    <!-- Strings for tag=technology/tips-and-tricks [CHAR LIMIT=20] -->
+    <string name="settings_technology_tipsandtricks_label">Tips-And-Tricks</string>
+    <string name="settings_technology_tipsandtricks_value">technology/tips-and-tricks</string>
+
+    <!-- Strings for tag=technology/viruses [CHAR LIMIT=20] -->
+    <string name="settings_technology_viruses_label">Viruses</string>
+    <string name="settings_technology_viruses_value">technology/viruses</string>
+
+    <!-- Strings for tag=technology/wearable-technology [CHAR LIMIT=20] -->
+    <string name="settings_technology_wearabletechnology_label">Wearable-Technology</string>
+    <string name="settings_technology_wearabletechnology_value">technology/wearable-technology</string>
+
+    <!-- Strings for tag=technology/wifi [CHAR LIMIT=20] -->
+    <string name="settings_technology_wifi_label">Wifi</string>
+    <string name="settings_technology_wifi_value">technology/wifi</string>
+
+    <!-- Strings for tag=technology/windows [CHAR LIMIT=20] -->
+    <string name="settings_technology_windows_label">Windows</string>
+    <string name="settings_technology_windows_value">technology/windows</string>
+
+
+    <!--GAMES-->
+    <!-- Strings For Games Preferences [CHAR LIMIT=30] -->
+    <string name="settings_games_label">Game Options</string>
+    <string name="settings_games_key" translatable="false">games</string>
+    <string name="settings_games_default_value" translatable="false">@string/api_tags_default_value</string>
+
+    <!-- Label for tag=music/blues [CHAR LIMIT=20] -->
+    <string name="settings_games_all_label">All</string>
+    <string name="settings_games_all_value" translatable="false">@string/api_tags_default_value</string>
+
+    <!-- Strings for tag=games/alternate-reality-games [CHAR LIMIT=20] -->
+    <string name="settings_games_alternaterealitygames_label">Alternate-reality-games</string>
+    <string name="settings_games_alternaterealitygames_value">games/alternate-reality-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_arcadegames_label">Arcade games</string>
+    <string name="settings_games_arcadegames_value">games/arcade-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_controversy_label">Controversy</string>
+    <string name="settings_games_controversy_value">games/controversy</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_e3_label">E3</string>
+    <string name="settings_games_e3_value">games/e3</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_fightinggames_label">Fighting games</string>
+    <string name="settings_games_fightinggames_value">games/fighting-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_gameculture_label">Game culture</string>
+    <string name="settings_games_gameculture_value">games/game-culture</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_gamesconsoles_label">Games consoles</string>
+    <string name="settings_games_gamesconsoles_value">games/games-consoles</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_gamesinnovations_label">Games innovations</string>
+    <string name="settings_games_gamesinnovations_value">games/gamesinnovations</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_gamingawards_label">Gaming awards</string>
+    <string name="settings_games_gamingawards_value">games/gaming-awards</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_handheld_label">Handheld</string>
+    <string name="settings_games_handheld_value">games/handheld</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_indiegames_label">Indie games</string>
+    <string name="settings_games_indiegames_value">games/indie-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_mixedreality_label">Mixed reality</string>
+    <string name="settings_games_mixedreality_value">games/mixedreality</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_mmorpg_label">Mmorpg</string>
+    <string name="settings_games_mmorpg_value">games/mmorpg</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_mobile_label">Mobile</string>
+    <string name="settings_games_mobile_value">games/mobile</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_musicgames_label">Music games</string>
+    <string name="settings_games_musicgames_value">games/music-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_nintendo_label">Nintendo</string>
+    <string name="settings_games_nintendo_value">games/nintendo</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_pc_label">Pc</string>
+    <string name="settings_games_pc_value">games/pc</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_platformgames_label">Platform games</string>
+    <string name="settings_games_platformgames_value">games/platform-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_playstation_label">Playstation</string>
+    <string name="settings_games_playstation_value">games/playstation</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_playstation4_label">Playstation 4</string>
+    <string name="settings_games_playstation4_value">games/playstation-4</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_psvita_label">Ps Vita</string>
+    <string name="settings_games_psvita_value">games/ps-vita</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_puzzlegames_label">Puzzle games</string>
+    <string name="settings_games_puzzlegames_value">games/puzzle-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_quizandtriviagames_label">Quiz and trivia games</string>
+    <string name="settings_games_quizandtriviagames_value">games/quiz-and-trivia-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_racinggames_label">Racing games</string>
+    <string name="settings_games_racinggames_value">games/racing-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_retrogames_label">Retro games</string>
+    <string name="settings_games_retrogames_value">games/retro-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_roleplayinggames_label">Role playing games</string>
+    <string name="settings_games_roleplayinggames_value">games/role-playing-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_shootemup_label">Shoot-em-up</string>
+    <string name="settings_games_shootemup_value">games/shoot-em-up</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_simulationgames_label">Simulation games</string>
+    <string name="settings_games_simulationgames_value">games/simulation-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_sportsgames_label">Sports games</string>
+    <string name="settings_games_sportsgames_value">games/sports-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_steam_label">Steam</string>
+    <string name="settings_games_steam_value">games/steam</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_strategygames_label">Strategy games</string>
+    <string name="settings_games_strategygames_value">games/strategy-games</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_wii_label">Wii</string>
+    <string name="settings_games_wii_value">games/wii</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_wiiu_label">Wii u</string>
+    <string name="settings_games_wiiu_value">games/wii-u</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_xbox_label">Xbox</string>
+    <string name="settings_games_xbox_value">games/xbox</string>
+
+    <!-- Strings for tag=games/ [CHAR LIMIT=20] -->
+    <string name="settings_games_xboxone_label">Xbox one</string>
+    <string name="settings_games_xboxone_value">games/xbox-one</string>
+
+
+    <!--SCIENCE-->
+    <!-- Strings For Science Preferences [CHAR LIMIT=30] -->
+    <string name="settings_science_label">Science options</string>
+    <string name="settings_science_key" translatable="false">science</string>
+    <string name="settings_science_default_value" translatable="false">@string/api_tags_default_value</string>
+
+    <!-- Label for tag=science/all [CHAR LIMIT=20] -->
+    <string name="settings_science_all_label">All</string>
+    <string name="settings_science_all_value" translatable="false">@string/api_tags_default_value</string>
+
+    <!-- Strings for Science tag=science/aeronautics [CHAR LIMIT=20] -->
+    <string name="settings_science_aeronautics_label">Aeronautics</string>
+    <string name="settings_science_aeronautics_value">science/aeronautics</string>
+
+    <!-- Strings for Science tag=science/ageing [CHAR LIMIT=20] -->
+    <string name="settings_science_ageing_label">Ageing</string>
+    <string name="settings_science_ageing_value">science/ageing</string>
+
+    <!-- Strings for Science tag=science/agriculture [CHAR LIMIT=20] -->
+    <string name="settings_science_agriculture_label">Agriculture</string>
+    <string name="settings_science_agriculture_value">science/agriculture</string>
+
+    <!-- Strings for Science tag=science/alien-life [CHAR LIMIT=20] -->
+    <string name="settings_science_alienlife_label">Alien Life</string>
+    <string name="settings_science_alienlife_value">science/alien-life</string>
+
+    <!-- Strings for Science tag=science/animalbehaviour [CHAR LIMIT=20] -->
+    <string name="settings_science_animalbehaviour_label">Animabehaviour</string>
+    <string name="settings_science_animalbehaviour_value">science/animalbehaviour</string>
+
+    <!-- Strings for Science tag=science/animal-experimentation [CHAR LIMIT=20] -->
+    <string name="settings_science_animalexperimentation_label">Animal Experimentation</string>
+    <string name="settings_science_animalexperimentation_value">science/animal-experimentation</string>
+
+    <!-- Strings for Science tag=science/anthropology [CHAR LIMIT=20] -->
+    <string name="settings_science_anthropology_label">Anthropology</string>
+    <string name="settings_science_anthropology_value">science/anthropology</string>
+
+    <!-- Strings for Science tag=science/archaeology [CHAR LIMIT=20] -->
+    <string name="settings_science_archaeology_label">Archaeology</string>
+    <string name="settings_science_archaeology_value">science/archaeology</string>
+
+    <!-- Strings for Science tag=science/archaeopteryx [CHAR LIMIT=20] -->
+    <string name="settings_science_archaeopteryx_label">Archaeopteryx</string>
+    <string name="settings_science_archaeopteryx_value">science/archaeopteryx</string>
+
+    <!-- Strings for Science tag=science/asteroids [CHAR LIMIT=20] -->
+    <string name="settings_science_asteroids_label">Asteroids</string>
+    <string name="settings_science_asteroids_value">science/asteroids</string>
+
+    <!-- Strings for Science tag=science/astronomy [CHAR LIMIT=20] -->
+    <string name="settings_science_astronomy_label">Astronomy</string>
+    <string name="settings_science_astronomy_value">science/astronomy</string>
+
+    <!-- Strings for Science tag=science/biochemistrymolecularbiology [CHAR LIMIT=20] -->
+    <string name="settings_science_biochemistrymolecularbiology_label">Biochemistry molecular biology</string>
+    <string name="settings_science_biochemistrymolecularbiology_value">science/biochemistrymolecularbiology</string>
+
+    <!-- Strings for Science tag=science/biology [CHAR LIMIT=20] -->
+    <string name="settings_science_biology_label">Biology</string>
+    <string name="settings_science_biology_value">science/biology</string>
+
+    <!-- Strings for Science tag=science/black-holes [CHAR LIMIT=20] -->
+    <string name="settings_science_blackholes_label">Black-Holes</string>
+    <string name="settings_science_blackholes_value">science/black-holes</string>
+
+    <!-- Strings for Science tag=science/cancer [CHAR LIMIT=20] -->
+    <string name="settings_science_cancer_label">Cancer</string>
+    <string name="settings_science_cancer_value">science/cancer</string>
+
+    <!-- Strings for Science tag=science/cern [CHAR LIMIT=20] -->
+    <string name="settings_science_cern_label">Cern</string>
+    <string name="settings_science_cern_value">science/cern</string>
+
+    <!-- Strings for Science tag=science/chemistry [CHAR LIMIT=20] -->
+    <string name="settings_science_chemistry_label">Chemistry</string>
+    <string name="settings_science_chemistry_value">science/chemistry</string>
+
+    <!-- Strings for Science tag=science/cloning [CHAR LIMIT=20] -->
+    <string name="settings_science_cloning_label">Cloning</string>
+    <string name="settings_science_cloning_value">science/cloning</string>
+
+    <!-- Strings for Science tag=science/consciousness [CHAR LIMIT=20] -->
+    <string name="settings_science_consciousness_label">Consciousness</string>
+    <string name="settings_science_consciousness_value">science/consciousness</string>
+
+    <!-- Strings for Science tag=science/controveriesinscience [CHAR LIMIT=20] -->
+    <string name="settings_science_controveriesinscience_label">Controveries in science</string>
+    <string name="settings_science_controveriesinscience_value">science/controveriesinscience</string>
+
+    <!-- Strings for Science tag=science/cryonics [CHAR LIMIT=20] -->
+    <string name="settings_science_cryonics_label">Cryonics</string>
+    <string name="settings_science_cryonics_value">science/cryonics</string>
+
+    <!-- Strings for Science tag=science/dinosaurs [CHAR LIMIT=20] -->
+    <string name="settings_science_dinosaurs_label">Dinosaurs</string>
+    <string name="settings_science_dinosaurs_value">science/dinosaurs</string>
+
+    <!-- Strings for Science tag=science/drugs [CHAR LIMIT=20] -->
+    <string name="settings_science_drugs_label">Drugs</string>
+    <string name="settings_science_drugs_value">science/drugs</string>
+
+    <!-- Strings for Science tag=science/egyptology [CHAR LIMIT=20] -->
+    <string name="settings_science_egyptology_label">Egyptology</string>
+    <string name="settings_science_egyptology_value">science/egyptology</string>
+
+    <!-- Strings for Science tag=science/embryos [CHAR LIMIT=20] -->
+    <string name="settings_science_embryos_label">Embryos</string>
+    <string name="settings_science_embryos_value">science/embryos</string>
+
+    <!-- Strings for Science tag=science/energy [CHAR LIMIT=20] -->
+    <string name="settings_science_energy_label">Energy</string>
+    <string name="settings_science_energy_value">science/energy</string>
+
+    <!-- Strings for Science tag=science/evolution [CHAR LIMIT=20] -->
+    <string name="settings_science_evolution_label">Evolution</string>
+    <string name="settings_science_evolution_value">science/evolution</string>
+
+    <!-- Strings for Science tag=science/exoplanets [CHAR LIMIT=20] -->
+    <string name="settings_science_exoplanets_label">Exoplanets</string>
+    <string name="settings_science_exoplanets_value">science/exoplanets</string>
+
+    <!-- Strings for Science tag=science/exploration [CHAR LIMIT=20] -->
+    <string name="settings_science_exploration_label">Exploration</string>
+    <string name="settings_science_exploration_value">science/exploration</string>
+
+    <!-- Strings for Science tag=science/extinct-wildlife [CHAR LIMIT=20] -->
+    <string name="settings_science_extinctwildlife_label">Extinct-Wildlife</string>
+    <string name="settings_science_extinctwildlife_value">science/extinct-wildlife</string>
+
+    <!-- Strings for Science tag=science/food-science [CHAR LIMIT=20] -->
+    <string name="settings_science_foodscience_label">Food-Science</string>
+    <string name="settings_science_foodscience_value">science/food-science</string>
+
+    <!-- Strings for Science tag=science/forensicscience [CHAR LIMIT=20] -->
+    <string name="settings_science_forensicscience_label">forensic science</string>
+    <string name="settings_science_forensicscience_value">science/forensicscience</string>
+
+    <!-- Strings for Science tag=science/fossils [CHAR LIMIT=20] -->
+    <string name="settings_science_fossils_label">Fossils</string>
+    <string name="settings_science_fossils_value">science/fossils</string>
+
+    <!-- Strings for Science tag=science/fungi [CHAR LIMIT=20] -->
+    <string name="settings_science_fungi_label">Fungi</string>
+    <string name="settings_science_fungi_value">science/fungi</string>
+
+    <!-- Strings for Science tag=science/genetics [CHAR LIMIT=20] -->
+    <string name="settings_science_genetics_label">Genetics</string>
+    <string name="settings_science_genetics_value">science/genetics</string>
+
+    <!-- Strings for Science tag=science/geography [CHAR LIMIT=20] -->
+    <string name="settings_science_geography_label">Geography</string>
+    <string name="settings_science_geography_value">science/geography</string>
+
+    <!-- Strings for Science tag=science/geology [CHAR LIMIT=20] -->
+    <string name="settings_science_geology_label">Geology</string>
+    <string name="settings_science_geology_value">science/geology</string>
+
+    <!-- Strings for Science tag=science/gravity [CHAR LIMIT=20] -->
+    <string name="settings_science_gravity_label">Gravity</string>
+    <string name="settings_science_gravity_value">science/gravity</string>
+
+    <!-- Strings for Science tag=science/history-science">history-science [CHAR LIMIT=20] -->
+    <string name="settings_science_historycience_label">History-Science</string>
+    <string name="settings_science_historycience_value">science/history-science</string>
+
+    <!-- Strings for Science tag=science/hubble-space-telescope">hubble-space-telescope [CHAR LIMIT=20] -->
+    <string name="settings_science_hubblespacetelescope_label">Hubble-Space-Telescope</string>
+    <string name="settings_science_hubblespacetelescope_value">science/hubble-space-telescope</string>
+
+    <!-- Strings for Science tag=science/human-biology [CHAR LIMIT=20] -->
+    <string name="settings_science_humanbiology_label">Human-Biology</string>
+    <string name="settings_science_humanbiology_value">science/human-biology</string>
+
+    <!-- Strings for Science tag=science/human-genome-project [CHAR LIMIT=20] -->
+    <string name="settings_science_humangenomeproject_label">Human Genome Project</string>
+    <string name="settings_science_humangenomeproject_value">science/human-genome-project</string>
+
+    <!-- Strings for Science tag=science/immunology [CHAR LIMIT=20] -->
+    <string name="settings_science_immunology_label">Immunology</string>
+    <string name="settings_science_immunology_value">science/immunology</string>
+
+    <!-- Strings for Science tag=science/infectiousdiseases [CHAR LIMIT=20] -->
+    <string name="settings_science_infectiousdiseases_label">Infectious diseases</string>
+    <string name="settings_science_infectiousdiseases_value">science/infectiousdiseases</string>
+
+    <!-- Strings for Science tag=science/language [CHAR LIMIT=20] -->
+    <string name="settings_science_language_label">Language</string>
+    <string name="settings_science_language_value">science/language</string>
+
+    <!-- Strings for Science tag=science/large-hadron-collider [CHAR LIMIT=20] -->
+    <string name="settings_science_largehadroncollider_label">Large Hadron Collider</string>
+    <string name="settings_science_largehadroncollider_value">science/large-hadron-collider</string>
+
+    <!-- Strings for Science tag=science/materials-science">materials-science [CHAR LIMIT=20] -->
+    <string name="settings_science_materialscience_label">Materials-Science</string>
+    <string name="settings_science_materialscience_value">science/materials-science</string>
+
+    <!-- Strings for Science tag=science/mathematics [CHAR LIMIT=20] -->
+    <string name="settings_science_mathematics_label">Mathematics</string>
+    <string name="settings_science_mathematics_value">science/mathematics</string>
+
+    <!-- Strings for Science tag=science/medical-research [CHAR LIMIT=20] -->
+    <string name="settings_science_medicalresearch_label">Medical-Research</string>
+    <string name="settings_science_medicalresearch_value">science/medical-research</string>
+
+    <!-- Strings for Science tag=science/memory [CHAR LIMIT=20] -->
+    <string name="settings_science_memory_label">Memory</string>
+    <string name="settings_science_memory_value">science/memory</string>
+
+    <!-- Strings for Science tag=science/meteorology [CHAR LIMIT=20] -->
+    <string name="settings_science_meteorology_label">Meteorology</string>
+    <string name="settings_science_meteorology_value">science/meteorology</string>
+
+    <!-- Strings for Science tag=science/meteors [CHAR LIMIT=20] -->
+    <string name="settings_science_meteors_label">Meteors</string>
+    <string name="settings_science_meteors_value">science/meteors</string>
+
+    <!-- Strings for Science tag=science/microbiology [CHAR LIMIT=20] -->
+    <string name="settings_science_microbiology_label">Microbiology</string>
+    <string name="settings_science_microbiology_value">science/microbiology</string>
+
+    <!-- Strings for Science tag=science/nanotechnology [CHAR LIMIT=20] -->
+    <string name="settings_science_nanotechnology_label">Nanotechnology</string>
+    <string name="settings_science_nanotechnology_value">science/nanotechnology</string>
+
+    <!-- Strings for Science tag=science/nasa [CHAR LIMIT=20] -->
+    <string name="settings_science_nasa_label">Nasa</string>
+    <string name="settings_science_nasa_value">science/nasa</string>
+
+    <!-- Strings for Science tag=science/neanderthals [CHAR LIMIT=20] -->
+    <string name="settings_science_neanderthals_label">Neanderthals</string>
+    <string name="settings_science_neanderthals_value">science/neanderthals</string>
+
+    <!-- Strings for Science tag=science/neuroscience [CHAR LIMIT=20] -->
+    <string name="settings_science_neuroscience_label">Neuroscience</string>
+    <string name="settings_science_neuroscience_value">science/neuroscience</string>
+
+    <!-- Strings for Science tag=science/nobelprizes [CHAR LIMIT=20] -->
+    <string name="settings_science_nobelprizes_label">Nobel prizes</string>
+    <string name="settings_science_nobelprizes_value">science/nobelprizes</string>
+
+    <!-- Strings for Science tag=science/nutrition [CHAR LIMIT=20] -->
+    <string name="settings_science_nutrition_label">Nutrition</string>
+    <string name="settings_science_nutrition_value">science/nutrition</string>
+
+    <!-- Strings for Science tag=science/paleontology [CHAR LIMIT=20] -->
+    <string name="settings_science_paleontology_label">Paleontology</string>
+    <string name="settings_science_paleontology_value">science/paleontology</string>
+
+    <!-- Strings for Science tag=science/particlphysics [CHAR LIMIT=20] -->
+    <string name="settings_science_particlphysics_label">Particle physics</string>
+    <string name="settings_science_particlphysics_value">science/particlphysics</string>
+
+    <!-- Strings for Science tag=science/physics [CHAR LIMIT=20] -->
+    <string name="settings_science_physics_label">Physics</string>
+    <string name="settings_science_physics_value">science/physics</string>
+
+    <!-- Strings for Science tag=science/planets [CHAR LIMIT=20] -->
+    <string name="settings_science_planets_label">Planets</string>
+    <string name="settings_science_planets_value">science/planets</string>
+
+    <!-- Strings for Science tag=science/poison [CHAR LIMIT=20] -->
+    <string name="settings_science_poison_label">Poison</string>
+    <string name="settings_science_poison_value">science/poison</string>
+
+    <!-- Strings for Science tag=science/primatology [CHAR LIMIT=20] -->
+    <string name="settings_science_primatology_label">Primatology</string>
+    <string name="settings_science_primatology_value">science/primatology</string>
+
+    <!-- Strings for Science tag=science/psychology [CHAR LIMIT=20] -->
+    <string name="settings_science_psychology_label">Psychology</string>
+    <string name="settings_science_psychology_value">science/psychology</string>
+
+    <!-- Strings for Science tag=science/reproduction [CHAR LIMIT=20] -->
+    <string name="settings_science_reproduction_label">Reproduction</string>
+    <string name="settings_science_reproduction_value">science/reproduction</string>
+
+    <!-- Strings for Science tag=science/satellites [CHAR LIMIT=20] -->
+    <string name="settings_science_satellites_label">Satellites</string>
+    <string name="settings_science_satellites_value">science/satellites</string>
+
+    <!-- Strings for Science tag=science/science-policy">science-policy [CHAR LIMIT=20] -->
+    <string name="settings_science_sciencepolicy_label">Science-Policy</string>
+    <string name="settings_science_sciencepolicy_value">science/science-policy</string>
+
+    <!-- Strings for Science tag=science/scienceofclimatechange [CHAR LIMIT=20] -->
+    <string name="settings_science_scienceofclimatechange_label">Science of climate change</string>
+    <string name="settings_science_scienceofclimatechange_value">science/science of climatechange</string>
+
+    <!-- Strings for Science tag=science/space [CHAR LIMIT=20] -->
+    <string name="settings_science_space_label">Space</string>
+    <string name="settings_science_space_value">science/space</string>
+
+    <!-- Strings for Science tag=science/spacex [CHAR LIMIT=20] -->
+    <string name="settings_science_spacex_label">Spacex</string>
+    <string name="settings_science_spacex_value">science/spacex</string>
+
+    <!-- Strings for Science tag=science/supernovae [CHAR LIMIT=20] -->
+    <string name="settings_science_supernovae_label">Supernovae</string>
+    <string name="settings_science_supernovae_value">science/supernovae</string>
+
+    <!-- Strings for Science tag=science/synthetic-biology >synthetic-biology [CHAR LIMIT=20] -->
+    <string name="settings_sciencesyntheticbiology_label">Synthetic-Biology</string>
+    <string name="settings_sciencesyntheticbiology_value">science/synthetic-biology</string>
+
+    <!-- Strings for Science tag=science/taxonomy [CHAR LIMIT=20] -->
+    <string name="settings_science_taxonomy_label">Taxonomy</string>
+    <string name="settings_science_taxonomy_value">science/taxonomy</string>
+
+    <!-- Strings for Science tag=science/tissue-engineering [CHAR LIMIT=20] -->
+    <string name="settings_science_tissueengineering_label">Tissue-Engineering</string>
+    <string name="settings_science_tissueengineering_value">science/tissue-engineering</string>
+
+    <!-- Strings for Science tag=science/veterinary-medicine [CHAR LIMIT=20] -->
+    <string name="settings_science_veterinarymedicine_label">Veterinary-Medicine</string>
+    <string name="settings_science_veterinarymedicine_value">science/veterinary-medicine</string>
+
+    <!-- Strings for Science tag=science/weaponstechnology [CHAR LIMIT=20] -->
+    <string name="settings_science_weaponstechnology_label">Weaponstechnology</string>
+    <string name="settings_science_weaponstechnology_value">science/weaponstechnology</string>
+
+    <!-- Strings for Science tag=science/zoology [CHAR LIMIT=20] -->
+    <string name="settings_science_zoology_label">Zoology</string>
+    <string name="settings_science_zoology_value">science/zoology</string>
 </resources>

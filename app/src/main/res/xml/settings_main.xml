@@ -24,4 +24,25 @@
         android:key="@string/settings_books_choices_key"
         android:title="@string/settings_books_choices_label" />
 
+    <ListPreference
+        android:defaultValue="@string/settings_technology_default_value"
+        android:entries="@array/settings_technology_label"
+        android:entryValues="@array/settings_technology_values"
+        android:key="@string/settings_technology_key"
+        android:title="@string/settings_technology_label" />
+
+    <ListPreference
+        android:defaultValue="@string/settings_games_default_value"
+        android:entries="@array/settings_games_labels"
+        android:entryValues="@array/settings_games_value"
+        android:key="@string/settings_games_key"
+        android:title="@string/settings_games_label" />
+
+    <ListPreference
+        android:defaultValue="@string/settings_science_default_value"
+        android:entries="@array/settings_science_labels"
+        android:entryValues="@array/settings_science_values"
+        android:key="@string/settings_science_key"
+        android:title="@string/settings_science_label" />
+
 </PreferenceScreen>

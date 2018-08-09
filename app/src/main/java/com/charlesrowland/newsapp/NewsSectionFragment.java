@@ -56,7 +56,6 @@ public class NewsSectionFragment extends Fragment implements LoaderManager.Loade
 
         // the url we need to query comes into the fragment as arguments
         String url = getArguments().getString("url");
-        Log.v(LOG_TAG, "url: " + url);
         if (!TextUtils.isEmpty(url)) {
             api_url = url;
         }

@@ -22,8 +22,6 @@ public class MainActivityPagerAdapter extends FragmentPagerAdapter {
         super(fm);
         this.context = context;
         this.sharedPrefs = sharedPrefs;
-        //this.orderBy = orderBy;
-
     }
 
     // get the titles for the tabs=
@@ -54,8 +52,9 @@ public class MainActivityPagerAdapter extends FragmentPagerAdapter {
         String orderBy  = sharedPrefs.getString(context.getString(R.string.settings_order_by_key), context.getString(R.string.settings_order_by_default));
         String musicTag  = sharedPrefs.getString(context.getString(R.string.settings_music_choices_key), context.getString(R.string.settings_music_default_value));
         String booksTag  = sharedPrefs.getString(context.getString(R.string.settings_books_choices_key), context.getString(R.string.settings_books_default_value));
-
-        Log.v(LOG_TAG, "orderBy: " + orderBy + ", musicTag: " + musicTag + ", booksTag: " + booksTag);
+        String gamesTag  = sharedPrefs.getString(context.getString(R.string.settings_games_key), context.getString(R.string.settings_games_default_value));
+        String technologyTag  = sharedPrefs.getString(context.getString(R.string.settings_technology_key), context.getString(R.string.settings_technology_default_value));
+        String scienceTag  = sharedPrefs.getString(context.getString(R.string.settings_science_key), context.getString(R.string.settings_science_dinosaurs_value));
 
         Bundle bundle = new Bundle();
 
@@ -64,16 +63,16 @@ public class MainActivityPagerAdapter extends FragmentPagerAdapter {
                 bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_MUSIC, musicTag, orderBy));
                 break;
             case 1:
-                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_GAMES, null, orderBy));
+                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_GAMES, gamesTag, orderBy));
                 break;
             case 2:
                 bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_BOOKS, booksTag, orderBy));
                 break;
             case 3:
-                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_TECH, null, orderBy));
+                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_TECH, technologyTag, orderBy));
                 break;
             case 4:
-                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_SCIENCE, null, orderBy));
+                bundle.putString("url", ApiUrlCreator.buildUrl(ApiUrlCreator.SECTION_SCIENCE, scienceTag, orderBy));
                 break;
             default:
                 // in the instance something wacky happens send the url over as null
