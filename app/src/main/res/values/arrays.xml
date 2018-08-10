@@ -137,6 +137,7 @@
     </string-array>
 
     <string-array name="settings_technology_values">
+        <item>@string/settings_technology_all_value</item>
         <item>@string/settings_technology_3d_value</item>
         <item>@string/settings_technology_android_value</item>
         <item>@string/settings_technology_apple_value</item>
@@ -181,6 +182,7 @@
     </string-array>
 
     <string-array name="settings_technology_label">
+        <item>@string/settings_technology_all_label</item>
         <item>@string/settings_technology_3d_label</item>
         <item>@string/settings_technology_android_label</item>
         <item>@string/settings_technology_apple_label</item>
@@ -225,6 +227,7 @@
     </string-array>
 
     <string-array name="settings_games_value">
+        <item>@string/settings_games_all_value</item>
         <item>@string/settings_games_alternaterealitygames_value</item>
         <item>@string/settings_games_arcadegames_value</item>
         <item>@string/settings_games_controversy_value</item>
@@ -263,6 +266,7 @@
 </string-array>
 
     <string-array name="settings_games_labels">
+        <item>@string/settings_games_all_label</item>
         <item>@string/settings_games_alternaterealitygames_label</item>
         <item>@string/settings_games_arcadegames_label</item>
         <item>@string/settings_games_controversy_label</item>
@@ -301,6 +305,7 @@
     </string-array>
 
     <string-array name="settings_science_values">
+        <item>@string/settings_science_all_value</item>
         <item>@string/settings_science_aeronautics_value</item>
         <item>@string/settings_science_ageing_value</item>
         <item>@string/settings_science_agriculture_value</item>
@@ -339,6 +344,7 @@
     </string-array>
 
     <string-array name="settings_science_labels">
+        <item>@string/settings_science_all_label</item>
         <item>@string/settings_science_aeronautics_label</item>
         <item>@string/settings_science_ageing_label</item>
         <item>@string/settings_science_agriculture_label</item>

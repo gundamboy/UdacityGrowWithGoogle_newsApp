@@ -8,6 +8,7 @@ public class Article {
 
     // webTitle
     private String mArticleTitle;
+
     // sectionName
     private String mSectionName;
 

@@ -47,6 +47,7 @@ public class SettingsActivity extends AppCompatActivity {
         startActivity(homeIntent);
     }
 
+    // one fragment to rule them all
     public static class NewsPreferenceFragment extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -75,6 +76,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         @Override
         public boolean onPreferenceChange(Preference preference, Object value) {
+            // the user made a change to their preferences. what? they are allowed to.
             String stringValue = value.toString();
 
             if (preference instanceof ListPreference) {

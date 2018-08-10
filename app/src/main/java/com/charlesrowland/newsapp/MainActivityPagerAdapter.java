@@ -54,7 +54,7 @@ public class MainActivityPagerAdapter extends FragmentPagerAdapter {
         String booksTag  = sharedPrefs.getString(context.getString(R.string.settings_books_choices_key), context.getString(R.string.settings_books_default_value));
         String gamesTag  = sharedPrefs.getString(context.getString(R.string.settings_games_key), context.getString(R.string.settings_games_default_value));
         String technologyTag  = sharedPrefs.getString(context.getString(R.string.settings_technology_key), context.getString(R.string.settings_technology_default_value));
-        String scienceTag  = sharedPrefs.getString(context.getString(R.string.settings_science_key), context.getString(R.string.settings_science_dinosaurs_value));
+        String scienceTag  = sharedPrefs.getString(context.getString(R.string.settings_science_key), context.getString(R.string.settings_science_default_value));
 
         Bundle bundle = new Bundle();
 

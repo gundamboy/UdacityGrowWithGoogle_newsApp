@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class ArticleAdapter extends ArrayAdapter<Article> {
-    public static final String LOG_TAG = ArticleAdapter.class.getSimpleName();
+    private static final String LOG_TAG = ArticleAdapter.class.getSimpleName();
 
     public ArticleAdapter(Context context, List<Article> articles) {
         super(context, 0, articles);
@@ -54,16 +54,13 @@ public class ArticleAdapter extends ArrayAdapter<Article> {
         if (currentArticle.getmArticleThumbnail() != null) {
             articleImage.setImageBitmap(currentArticle.getmArticleThumbnail());
         } else {
-            articleImage.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), R.drawable.gaurdian_logo_green, null));
+            //articleImage.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), R.drawable.gaurdian_logo_green, null));
+            articleImage.setVisibility(View.GONE);
         }
 
         // credit where credit is due. Get the author
         TextView author = listItemView.findViewById(R.id.author);
         author.setText(currentArticle.getmArticleAuthor());
-
-        // set the date
-//        TextView articleDate = listItemView.findViewById(R.id.date);
-//        articleDate.setText(formatDate(currentArticle.getmArticlePublicationDate()));
 
         // article title
         TextView articleTitle = listItemView.findViewById(R.id.article_title);

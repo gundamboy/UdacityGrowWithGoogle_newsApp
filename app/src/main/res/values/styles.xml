@@ -15,6 +15,7 @@
         <item name="actionOverflowButtonStyle">@style/OverFlow</item>
     </style>
 
+    <!--this is for the appbar-->
     <style name="OverFlow" parent="@style/AppTheme">
         <item name="android:src">@drawable/ic_action_navigation_more_vert</item>
         <item name="android:paddingEnd">@dimen/baseline_eight</item>
@@ -36,10 +37,17 @@
         <item name="android:textSize">@dimen/article_title_text</item>
     </style>
 
-    <style name="ToolBarStyle" parent="@style/AppTheme">
-        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
-        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    <!--Preferences stuff-->
+    <style name="SettingsFragmentTheme" parent="@style/AppTheme">
+        <item name="android:dialogTheme">@style/PopUpDialog</item>
+        <item name="android:alertDialogTheme">@style/PopUpDialog</item>
+    </style>
+
+    <!-- Settings Dialog Styles -->
+    <style name="PopUpDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
         <item name="android:background">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
 </resources>

@@ -14,7 +14,6 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
     public static final String LOG_TAG = MainActivity.class.getSimpleName();
-    private TabLayout tabLayout;
     public  SharedPreferences sharedPrefs;
     private String SELECTED_TAB = "selectedtab";
     int selectedTabPosition;
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         // send the viewpager to the tabs
-        tabLayout = findViewById(R.id.tab_layout);
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
 
 
@@ -65,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // sets the current tab back to what the user was on before they left for the settings
+        // without this the app would go back to the first tab when you refresh. screw that noise.
         TabLayout.Tab tab = tabLayout.getTabAt(sharedPrefs.getInt(SELECTED_TAB,0));
         tab.select();
 
@@ -79,25 +79,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
+        // the user pushes the settings icon and taps the word Settings
+        // this is the big shiny red button that you just HAVE to push
         int id = item.getItemId();
-
         if (id == R.id.action_settings) {
             Intent settingsIntent = new Intent(this, SettingsActivity.class);
             startActivity(settingsIntent);
             return true;
         }
         return super.onOptionsItemSelected(item);
-
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
     }
 }
