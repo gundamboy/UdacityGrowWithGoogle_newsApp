@@ -71,6 +71,7 @@ public final class ApiUrlCreator {
         }
 
         // url is done! return it.
+        Log.v(LOG_TAG, "buildUrl stringBuilder value:" + stringBuilder.toString());
         return stringBuilder.toString();
     }
 }

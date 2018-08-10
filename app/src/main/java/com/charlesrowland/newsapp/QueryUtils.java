@@ -208,7 +208,7 @@ public final class QueryUtils {
 
 
                 // add a new Article based on the thumbnail image
-                articles.add(new Article(publishDate, articleTitle, articleSection, articleUrl, articleAuthor, downloadArticleImage(articleImage)));
+                articles.add(new Article(publishDate, articleTitle, articleSection, articleUrl, articleAuthor, downloadArticleImage(articleImage, articleTitle, articleSection)));
             }
         } catch (JSONException e) {
             Log.e(LOG_TAG, "Problem parsing the article JSON results", e);
@@ -224,17 +224,25 @@ public final class QueryUtils {
      * @param url string
      * @return a bitmap
      */
-    private static Bitmap downloadArticleImage(String url) {
+    private static Bitmap downloadArticleImage(String url, String articleTitle, String articleSection ) {
         // null at first because in case the url is. this way it will toss out the exception
+
         Bitmap image = null;
 
-        // try to do all the things
-        try {
-            InputStream inputStream = new URL(url).openStream();
-            image = BitmapFactory.decodeStream(inputStream);
-        } catch (Exception e) {
-            Log.e(LOG_TAG, e.getMessage());
+        if (url != null && !url.isEmpty()) {
+            // try to do all the things
+
+            try {
+                InputStream inputStream = new URL(url).openStream();
+                image = BitmapFactory.decodeStream(inputStream);
+            } catch (Exception e) {
+                Log.e(LOG_TAG, e.getMessage());
+            }
+        } else {
+            Log.v(LOG_TAG, "url is empty or: " + url + " || articleTitle: " + articleTitle + " || articleSection: " + articleSection);
         }
+
+        Log.v(LOG_TAG, "image: " + image + " || articleTitle: " + articleTitle + " || articleSection: " + articleSection);
 
         // return image we snatched liked h4x3rs
         return image;
